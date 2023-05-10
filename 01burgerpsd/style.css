@@ -219,7 +219,6 @@ h1{
     color: #f6eedf;
     font-size: 25px;
     font-weight: bold;
-    border: 5px solid white;
     border-radius: 200px;
     padding: 50px 0;
 }
@@ -233,11 +232,7 @@ h1{
     color: #f64b3c;
     padding: 70px 0;
 }
-.sec6{
-    margin: 0px 150px;
-    padding: 20px 0 80px 0;
-    gap: 100px;
-}
+
 .sec6_1{
     color: #f64b3c;
     background-color: white;
@@ -345,7 +340,66 @@ h1{
 
 /* // Extra small devices (portrait phones, less than 576px) */
 /* // No media query since this is the default in Bootstrap */
-
+@media (max-width: 575px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .col-33{
+        width: 100%;
+    }
+    .col-25{
+        width: 100%;
+    }
+    .col-40{
+        width: 100%;
+    }
+    .col-20{
+        width: 100%;
+    }
+    #navbar .nav{
+        display: none;
+    }
+    .nav .navmenu{
+        display: block;
+    }
+    .nav .navmenu li{
+        padding: 10px;
+    }
+    #navbar #nav-btn:checked ~ .nav{
+        display: block;
+        position: absolute;
+        top: 110px;
+        background-color: rgba(0,0,0,0.9);
+        padding: 0px 110px;
+    }
+    #section4>.row{
+        flex-direction: column-reverse;
+    }
+    #section5>p{
+        padding: 0 10px;
+    }
+    .sec5>p{
+        padding: 100px;
+    }
+    .sec6{
+        margin: 0px 100px;
+        padding: 20px 0 80px 0;
+        gap: 100px;
+    }
+    .sec7{
+        padding: 200px 0px;
+    }
+    .sec8{
+        padding: 190px 0px;
+    }
+    #section8 input{
+        width: 300px;
+    }
+}
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .container{
@@ -392,11 +446,19 @@ h1{
     .sec5>p{
         padding: 100px;
     }
+    .sec6{
+        margin: 0px 150px;
+        padding: 20px 0 80px 0;
+        gap: 100px;
+    }
     .sec7{
         padding: 200px 0px;
     }
     .sec8{
         padding: 190px 0px;
+    }
+    #section8 input{
+        width: 450px;
     }
 }
 
